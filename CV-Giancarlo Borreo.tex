@@ -1,0 +1,149 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{#1}}%
+\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{-0.5#1}}%
+\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+#1 &
+#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+	{\LARGE \textbf{Giancarlo Borreo}}\\
+	Torino, Italia
+	\vspace{0.02cm}
+	\\
+	\raisebox{-0.2\height}{{\small \faPhoneSquare}} \ \  +39 351 911 92 91 \hfill
+	\raisebox{-0.2\height}{{\small \faEnvelopeSquare}} \ \ giancarloborreo@gmail.com \hfill
+	\raisebox{-0.2\height}{{\small \faGithubSquare}} \ \
+	\href{https://github.com/deadman20018/}{GitHub} \hfill
+	\raisebox{-0.2\height}{{\small \faLinkedinSquare}} \ \
+	\href{https://www.linkedin.com/in/giancarlo-borreo-8b79101a0/}{LinkedIn}
+\end{center}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Experience}
+
+\renewcommand\labelitemi{}
+\renewcommand\labelitemii{$\bullet$}
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+	\item
+	      \headerrow
+	      {\textbf{ZeroB}}
+	      {\textbf{Torino, Italia}}
+	      \headerrow
+	      {\emph{Junior Data Scientist}}
+	      {\emph{Novembre 2022 -- Giugno 2023}}
+	      \begin{itemize*}
+	      	\item Sviluppo di modelli di linear regression e logistic regression per la creazione di polizze assicurative in collaborazione con un team multiculturale basato a Madrid, Spagna    	      
+	      	\item Utilizzo di Git-Fork per il versionamento del codice
+	      	\item Navigazione di Azure Data Lake per l'esplorazione dei dati utilizzando SQL
+	      	\item Analisi di dataset complessi con R
+	      	\item Sviluppo applicazione Machine Learning per distinguere cani e gatti
+	      	
+	      \end{itemize*}
+	\item
+	      \headerrow
+	      {\textbf{Capgemini Italy}}
+	      {\textbf{Torino, Italia}}
+	      \headerrow
+	      {\emph{Analyst Consultant-Software Engineer}}
+	      {\emph{Novembre 2021 -- Novembre 2022}}
+	      \begin{itemize*}
+	      	\item Sviluppo di applicativi full stack utilizzando JSP, Web Servlet e Spring Boot 
+	      	\item Utilizzo di Jira per la condivisione dei task e per monitorare l'avanzamento dei sprint
+	      	\item Utilizzo di MySQL e PostgreSQL per la navigazione delle tabelle di database
+	      	\item Utilizzo di Git-Fork per il versionamento del codice
+	      	\item Sviluppo di API REST utilizzando Spring Boot
+	      	\item Utilizzo di Postman per testare le API
+	      	\item Lavoro in modalità Agile/Scrum
+	      \end{itemize*}
+    \item
+	      \headerrow
+	      {\textbf{VLC 2}}
+	      {\textbf{Torino, Italia}}
+	      \headerrow
+	      {\emph{Software Engineering Intern}}
+	      {\emph{Ottobre 2021 -- Novembre 2021}}
+	      \begin{itemize*}
+	      	\item Sviluppo di un gestionale aziendale per l'azienda lato backend con l'utilizzo di Spring Boot, DBeaver, Postman, PostgreSQL
+	      \end{itemize*}
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Skills}
+
+\hyphenpenalty=1000
+\begin{itemize}[leftmargin=1em,noitemsep]
+	\item \textbf{Linguaggi di programmazione principali:} Java, C\#, JavaScript, Python, SQL, R, C++
+	\item \textbf{Software:} IntelliJ IDEA, Eclipse, Sublime Text, Visual Studio Code, Office 365 package (Word, Excel, PowerPoint), Jupyter, Visual Studio, Unity, Docker, DBeaver, Microsoft Teams, Microsoft Outlook, Git-Fork, GitHub Desktop, Azure Portal
+	\item \textbf{Lingue:} Inglese (C2), Italiano (C2), Tedesco (C2), Spagnolo (B1)
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Certificazioni}
+
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+	\item
+	      \headerrow
+	      {\textbf{MIT Professional Education}}
+	      {\textbf{Applied Data Science}}
+	      \headerrow
+	      {\textbf{Voto: 98/100}}
+	      {\href{https://www.credential.net/06861b98-4e6f-4009-a5d2-f2fe0cbdded4}{Certification Link}}
+        \item \textbf{Competenze apprese:} Analisi dei dati, Riduzione della dimensionalità, Clustering, Visualizzazione e interpretazione, Apprendimento automatico, Deep Learning, Sistemi di raccomandazione
+        
+	\item
+	     \headerrow
+	     {\textbf{AZ-900}}
+	     {\textbf{Concetti fondamentali di Microsoft Azure}}
+	     \item \textbf{Competenze apprese:} IaaS, PaaS, SaaS, Vantaggi del Cloud, modelli publici, privati e ibridi di cloud, Azure Cost Calculator, navigazione portale Azure
+    \item
+	    \headerrow
+	    {\textbf{Generation Italy}}
+	    {\textbf{Junior Java Developer}}
+	    \item \textbf{Competenze apprese:} Object Oriented Programming, Data structures in Java, Algorithms in Java, REST Protocol, API REST, Sviluppo di Web Servlet, Sviluppo di JSP, Hibernate,  Maven, HTML, CSS, Javascript, SQL, XAAMP, Teamwork, Comunicazione, Problem solving, Gestione del tempo efficace, Leadership
+    
+\end{itemize}
+
+\end{document}
